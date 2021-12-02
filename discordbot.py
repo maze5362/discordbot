@@ -50,7 +50,7 @@ async def on_message(message):
     if message.content == '!황성진':
         await message.channel.send("이 서버의 주인이자 지배자입니다.")
 
-    if message.content == "!ㅅㅊ, !생축, !생일축하, !생일축하합니다":
+    if message.content == '!생축':
         await message.channel.send("생일~축하~합니다~")
 
     if message.content == '!내정보':
