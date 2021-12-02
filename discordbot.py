@@ -44,6 +44,9 @@ async def on_message(message):
         await message.channel.purge(limit=number)
         await message.channel.send(f"{number}개의 메세지 삭제 완료!")
 
+    if message.content == '!안녕':
+        await message.channel.send("안녕하세요!전 성진봇이예요!)
+
     if message.content == '!내정보':
         user = message.author
         date = datetime.datetime.utcfromtimestamp(((int(user.id) >> 22) + 1420070400000) / 1000)
