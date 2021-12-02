@@ -1,8 +1,7 @@
-discord.py
-datetime
-discord.activity
-pip
-openpyxl
-requests
-asyncio
-json
+discord.py==1.7.3
+datetime==4.3
+discord==1.7.3
+pip==21.3.1
+openpyxl==3.0.9
+requests==2.26.0
+asyncio==3.4.3
