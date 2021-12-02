@@ -5,6 +5,7 @@ from discord.activity import Game
 import openpyxl
 import requests
 import asyncio
+import os
 from json import loads
 
 
@@ -60,5 +61,6 @@ async def on_message(message):
         member = message.guild.get_member(int(message.content.split(" ")[1]))
         await message.guild.kick(member, reason=' '.join(message.content.split(" ")[2:]))
         await message.guild.ban(member, reason=' '.join(message.content.split(" ")[2:]))
-
-client.run('OTE1MTc3NTA3NjM0OTQxOTcy.YaXzeA.B6-EHk3COD6Tqp393U5XSgzLohI')
+        
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
