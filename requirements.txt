@@ -1,0 +1,8 @@
+discord.py
+datetime
+discord.activity
+pip
+openpyxl
+requests
+asyncio
+json
