@@ -47,6 +47,12 @@ async def on_message(message):
     if message.content == '!안녕':
         await message.channel.send("안녕하세요!전 성진봇이예요!")
 
+    if message.content == '!황성진':
+        await message.channel.send("이 서버의 주인이자 지배자입니다.")
+
+    if message.content == "!ㅅㅊ, !생축, !생일축하, !생일축하합니다":
+        await message.channel.send("생일~축하~합니다~")
+
     if message.content == '!내정보':
         user = message.author
         date = datetime.datetime.utcfromtimestamp(((int(user.id) >> 22) + 1420070400000) / 1000)
